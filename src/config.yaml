@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Girls Got Game
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Welcome to Girls Got Game!
+    template: '%s — Girls Got Game'
+  description: "\U0001F680 A game jam to empower girls and non-binary youth in game development!"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Girls Got Game
     images:
       - url: '~/assets/images/default.png'
         width: 1200

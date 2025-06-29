@@ -14,23 +14,28 @@ const {
   defaultIcon,
 
   id,
-  isDark = false,
   classes = {},
-  bg = await Astro.slots.render('bg'),
 } = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
-  <ItemGrid
-    items={items}
-    columns={columns}
-    defaultIcon={defaultIcon}
-    classes={{
-      container: '',
-      title: 'md:text-[1.3rem]',
-      icon: 'text-white bg-primary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0',
-      ...((classes?.items as Record<string, never>) ?? {}),
-    }}
-  />
-</WidgetWrapper>
+<div class="max-w-5xl mx-auto rounded-3xl p-0" style="background-color: rgba(22, 17, 68, 0.5);">
+  <WidgetWrapper id={id} containerClass={`rounded-3xl p-8 shadow-md ${classes?.container ?? ''}`}>
+    <Headline
+      title={title}
+      subtitle={subtitle}
+      tagline={tagline}
+      classes={classes?.headline as Record<string, string>}
+    />
+    <ItemGrid
+      items={items}
+      columns={columns}
+      defaultIcon={defaultIcon}
+      classes={{
+        container: '',
+        title: 'md:text-[1.3rem]',
+        icon: 'text-fuchsia-400 bg-primary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0',
+        ...((classes?.items as Record<string, never>) ?? {}),
+      }}
+    />
+  </WidgetWrapper>
+</div>

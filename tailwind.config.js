@@ -14,9 +14,9 @@ export default {
         muted: 'var(--aw-color-text-muted)',
       },
       fontFamily: {
-        sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
-        heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+        sans: ['Comfortaa', 'cursive', ...defaultTheme.fontFamily.sans],
+        serif: ['Comfortaa', 'cursive', ...defaultTheme.fontFamily.serif],
+        heading: ['Comfortaa', 'cursive', ...defaultTheme.fontFamily.sans],
       },
 
       animation: {

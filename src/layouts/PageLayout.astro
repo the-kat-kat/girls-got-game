@@ -2,7 +2,6 @@
 import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
-import Announcement from '~/components/widgets/Announcement.astro';
 
 import { headerData, footerData } from '~/navigation';
 
@@ -14,18 +13,31 @@ export interface Props {
 
 const { metadata } = Astro.props;
 ---
-
 <Layout metadata={metadata}>
-  <slot name="announcement">
-    <Announcement />
-  </slot>
-  <slot name="header">
-    <Header {...headerData} isSticky showRssFeed showToggleTheme />
-  </slot>
-  <main>
-    <slot />
-  </main>
-  <slot name="footer">
-    <Footer {...footerData} />
-  </slot>
+  <div class="flex flex-col min-h-screen">
+    <slot name="header">
+      <Header {...headerData} isSticky/>
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet" />
+    </slot>
+
+    <!-- Parallax Layers -->
+    <div
+      class="parallax-container fixed inset-0 w-full h-full overflow-hidden pointer-events-none -z-50"
+      aria-hidden="true"
+    >
+      <img src="/assets/images/clouds.PNG" alt="Clouds" class="parallax-far absolute top-0 w-full object-contain" />
+      <img src="/assets/images/hills.PNG" alt="Hills" class="parallax-mid absolute top-0 w-full object-contain" />
+      <img src="/assets/images/grass.PNG" alt="Grass" class="parallax-midnear absolute top-0 w-full object-contain" />
+      <img src="/assets/images/poppy.PNG" alt="Flowers" class="parallax-near absolute top-0 w-full object-contain" />
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <slot />
+    </main>
+
+    <slot name="footer">
+      <Footer {...footerData} />
+    </slot>
+  </div>
 </Layout>

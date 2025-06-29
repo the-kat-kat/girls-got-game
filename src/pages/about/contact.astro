@@ -1,0 +1,29 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Content2 from '~/components/widgets/Content2.astro';
+
+const metadata = {
+  title: 'About Us',
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Content Widget **************** -->
+
+  <Content2
+    isReversed
+    items={[
+      {
+        title: 'Contact',
+        description:
+          "Girls Got Game is an international online game jam designed to empower girls ages 13 to 18 to explore creativity, coding, and storytelling through game development. Our goal is to foster confidence and curiosity in a supportive, inclusive environment. Over the course of the jam, participants will have the opportunity to design and build their own games solo or in teams. <br /> <br />Girls Got Game is beginner-friendly and community-focused. Along the way, participants will receive mentorship, access to resources, and encouragement from fellow creators around the world. Whether you're passionate about coding, art, design, writing, or just want to try something new, Girls Got Game is for you.",
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+  </Content2>
+</Layout>

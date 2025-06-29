@@ -4,11 +4,6 @@ import typographyPlugin from '@tailwindcss/typography';
 
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,json,md,mdx,svelte,ts,tsx,vue}'],
-  safelist: [
-    'text-fuchsia-400',
-    'bg-fuchsia-400',
-    'hover:text-fuchsia-400',
-  ],
   theme: {
     extend: {
       colors: {
@@ -44,3 +39,11 @@ export default {
   ],
   darkMode: 'class',
 };
+
+module.exports = {
+    safelist: [
+    'text-fuchsia-400',
+    'bg-fuchsia-400',
+    'hover:text-fuchsia-400',
+  ]
+}

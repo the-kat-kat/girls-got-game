@@ -39,11 +39,3 @@ export default {
   ],
   darkMode: 'class',
 };
-
-module.exports = {
-    safelist: [
-    'text-fuchsia-400',
-    'bg-fuchsia-400',
-    'hover:text-fuchsia-400',
-  ]
-}

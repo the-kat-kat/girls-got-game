@@ -40,7 +40,7 @@ export const footerData = {
   secondaryLinks: [],
   socialLinks: [],
   footNote: `
-    Built with <a class="text-fuchsia-400 underline dark:text-muted" href="https://github.com/onwidget/astrowind"> AstroWind </a> ·
-    Contact us at <a class="text-fuchsia-400 underline dark:text-muted" href="mailto: contact@girlsgotgame.com">contact@girlsgotgame.com</a>
+    Built with <a class="text-fuchsia-400 underline " href="https://github.com/onwidget/astrowind"> AstroWind </a> ·
+    Contact us at <a class="text-fuchsia-400 underline " href="mailto: contact@girlsgotgame.com">contact@girlsgotgame.com</a>
   `,
 };

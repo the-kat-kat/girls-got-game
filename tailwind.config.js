@@ -4,7 +4,11 @@ import typographyPlugin from '@tailwindcss/typography';
 
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,json,md,mdx,svelte,ts,tsx,vue}'],
-  safelist: ['text-fuchsia-400', 'hover:text-white', 'hover:bg-fuchsia-200'],
+  safelist: [
+    'text-fuchsia-400',
+    'hover:text-white', 
+    'hover:bg-fuchsia-200',
+    'rounded',],
   theme: {
     extend: {
       colors: {

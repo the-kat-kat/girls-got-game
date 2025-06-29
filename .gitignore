@@ -21,4 +21,8 @@ pnpm-debug.log*
 
 pnpm-lock.yaml
 
+<<<<<<< HEAD
 .astro
+=======
+.astro
+>>>>>>> 15b0ceed66b127334a3223103a4793312261251e

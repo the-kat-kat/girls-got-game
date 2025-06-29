@@ -59,7 +59,10 @@ const {
                 {Array.isArray(actions) ? (
                   actions.map((action) => (
                     <div class="flex w-full sm:w-auto">
-                      <Button {...(action || {})} class="bg-white text-fuchsia-400 border-0 hover:bg-fuchsia-200 hover:text-white w-full sm:mb-0" />
+                      <Button
+                        {...(action || {})}
+                        class="bg-white text-fuchsia-400 border-0 hover:bg-fuchsia-200 hover:text-white w-full sm:mb-0"
+                      />
                     </div>
                   ))
                 ) : (

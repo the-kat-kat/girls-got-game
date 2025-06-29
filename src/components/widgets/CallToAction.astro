@@ -20,12 +20,7 @@ const {
 } = Astro.props;
 ---
 
-<WidgetWrapper
-  id={id}
-  isDark={isDark}
-  containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`}
-  bg={bg}
->
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <div
     class="text-center p-4 md:p-6 rounded-3xl shadow-xl mb-0 max-w-5xl mx-auto"
     style="background-color: rgba(22, 17, 68, 0.5);"
@@ -39,21 +34,23 @@ const {
       }}
     />
 
-    {actions && (
-      <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-4">
-        {Array.isArray(actions) ? (
-          actions.map((action) => (
-            <div class="flex w-full sm:w-auto">
-              <Button
-                {...(action || {})}
-                class={`px-4 py-2 font-semibold rounded bg-white text-fuchsia-400 border-0 hover:bg-fuchsia-200 hover:text-white w-full sm:mb-0 ${action?.class ?? ''}`}
-              />
-            </div>
-          ))
-        ) : (
-          <Fragment set:html={actions} />
-        )}
-      </div>
-    )}
+    {
+      actions && (
+        <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-4">
+          {Array.isArray(actions) ? (
+            actions.map((action) => (
+              <div class="flex w-full sm:w-auto">
+                <Button
+                  {...(action || {})}
+                  class={`px-4 py-2 font-semibold rounded bg-white text-fuchsia-400 border-0 hover:bg-fuchsia-200 hover:text-white w-full sm:mb-0 ${action?.class ?? ''}`}
+                />
+              </div>
+            ))
+          ) : (
+            <Fragment set:html={actions} />
+          )}
+        </div>
+      )
+    }
   </div>
 </WidgetWrapper>

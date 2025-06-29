@@ -14,34 +14,34 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Register Now',
+        href: 'https://docs.google.com/forms/d/e/1FAIpQLSckl7t6_hGV4MBWNYC-sADMKWYsxWwomkXpVUWyGTu_CrR39A/viewform?usp=header',
+      },
+
+      {
+        variant: 'primary',
+        text: 'Join Our Discord',
+        href: 'https://discord.gg/TgweDKk2',
+      },
+    ]}
+    image={{ src: '~/assets/images/arrow2.png', alt: 'Girls Got Game Hero Image' }}
+  >
+    <Fragment slot="title"> Welcome to Girls Got Game! </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="text-white leading-none">
+        An international game jam empowering girls and <br /> non-binary youth through creativity and code <br />
+      </span>
+      <span class="text-white leading-loose"> <strong class="text-xl md:text-2xl"> August 16 - 22, 2025</strong></span>
+    </Fragment>
+  </Hero>
+
   <main class="space-y-40">
-    <!-- Hero Widget ******************* -->
-    <Hero
-      actions={[
-        {
-          variant: 'primary',
-          text: 'Register Now',
-          href: 'https://docs.google.com/forms/d/e/1FAIpQLSckl7t6_hGV4MBWNYC-sADMKWYsxWwomkXpVUWyGTu_CrR39A/viewform?usp=header',
-        },
-
-        {
-          variant: 'primary',
-          text: 'Join Our Discord',
-          href: 'https://discord.gg/TgweDKk2',
-        },
-      ]}
-      image={{ src: '~/assets/images/arrow2.png', alt: 'Girls Got Game Hero Image' }}
-    >
-      <Fragment slot="title"> Welcome to Girls Got Game! </Fragment>
-
-      <Fragment slot="subtitle">
-        <span class="text-white"
-          >An international game jam empowering girls and non-binary youth through creativity and code <br /> August 16 -
-          22, 2025
-        </span>
-      </Fragment>
-    </Hero>
-
     <!-- Features Widget *************** -->
     <section id="About" class="intersect animate-fade">
       <Features

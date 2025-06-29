@@ -1,9 +1,11 @@
 ---
+import favicon from '~/assets/favicons/favicon.svg?url';
 import { SITE } from 'astrowind:config';
 ---
 
 <span
   class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-white whitespace-nowrap dark:text-white"
 >
-  🚀 {SITE?.name}
+  <img src={favicon} alt="Site Logo" class="inline-block w-12 h-12 mr-1 align-middle" />
+  {SITE?.name}
 </span>

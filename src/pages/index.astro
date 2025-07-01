@@ -160,29 +160,29 @@ const metadata = {
 
     <!--paralax scroll-->
     <script is:inline>
-      //if (window.innerWidth > 768) {
-      window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset;
+      if (window.innerWidth > 768) {
+        window.addEventListener('scroll', () => {
+          const scrollTop = window.pageYOffset;
 
-        const far = document.querySelector('.parallax-far');
-        const mid = document.querySelector('.parallax-mid');
-        const midnear = document.querySelector('.parallax-midnear');
-        const near = document.querySelector('.parallax-near');
+          const far = document.querySelector('.parallax-far');
+          const mid = document.querySelector('.parallax-mid');
+          const midnear = document.querySelector('.parallax-midnear');
+          const near = document.querySelector('.parallax-near');
 
-        if (far) {
-          far.style.transform = `translateY(${(-scrollTop * 80) / window.innerWidth}px)`;
-        }
-        if (mid) {
-          mid.style.transform = `translateY(${(-scrollTop * 200) / window.innerWidth}px)`;
-        }
-        if (midnear) {
-          midnear.style.transform = `translateY(${(-scrollTop * 300) / window.innerWidth}px)`;
-        }
-        if (near) {
-          near.style.transform = `translateY(${(-scrollTop * 400) / window.innerWidth}px)`;
-        }
-      });
-      //}
+          if (far) {
+            far.style.transform = `translateY(${(-scrollTop * 80) / window.innerWidth}px)`;
+          }
+          if (mid) {
+            mid.style.transform = `translateY(${(-scrollTop * 200) / window.innerWidth}px)`;
+          }
+          if (midnear) {
+            midnear.style.transform = `translateY(${(-scrollTop * 300) / window.innerWidth}px)`;
+          }
+          if (near) {
+            near.style.transform = `translateY(${(-scrollTop * 400) / window.innerWidth}px)`;
+          }
+        });
+      }
     </script>
   </main>
 </Layout>

@@ -28,8 +28,11 @@ import '@fontsource-variable/inter';
 
   header[data-aw-sticky-header] > .absolute.inset-0 {
     background-color: rgb(255, 255, 255, 0.2) !important;
-    @media (max-width: 767px) {
-      background-color: rgb(255, 255, 255, 1) !important;
+  }
+
+  @media (max-width: 767px) {
+    header[data-aw-sticky-header] > .absolute.inset-0 {
+      background-color: rgba(255, 255, 255, 1) !important;
     }
   }
 

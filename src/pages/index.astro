@@ -192,16 +192,16 @@ const metadata = {
           const near = document.querySelector('.parallax-near');
 
           if (far) {
-            far.style.transform = `translateY(${(-scrollTop * 2) / window.innerWidth}px)`;
+            far.style.transform = `translateY(${((-scrollTop * 8) / window.innerWidth) ^ 2}px)`;
           }
           if (mid) {
-            mid.style.transform = `translateY(${(-scrollTop * 4) / window.innerWidth}px)`;
+            mid.style.transform = `translateY(${((-scrollTop * 20) / window.innerWidth) ^ 2}px)`;
           }
           if (midnear) {
-            midnear.style.transform = `translateY(${(-scrollTop * 6) / window.innerWidth}px)`;
+            midnear.style.transform = `translateY(${((-scrollTop * 30) / window.innerWidth) ^ 2}px)`;
           }
           if (near) {
-            near.style.transform = `translateY(${(-scrollTop * 8) / window.innerWidth}px)`;
+            near.style.transform = `translateY(${((-scrollTop * 40) / window.innerWidth) ^ 2}px)`;
           }
         });
       }

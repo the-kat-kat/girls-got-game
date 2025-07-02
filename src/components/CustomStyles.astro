@@ -51,6 +51,22 @@ import '@fontsource-variable/inter';
     letter-spacing: 0.08em;
   }
 
+  @nedua (max-width: 767px) {
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('/assets/images/bg.JPG');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
   .parallax-layer {
     will-change: transform;
     pointer-events: none;

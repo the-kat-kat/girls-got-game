@@ -20,7 +20,7 @@ metadata:
     images:
       - url: '/assets/images/thumbnail.png'
         width: 1200
-        height: 630
+        height: 628
     type: website
   twitter:
     handle: '@onwidget'

@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Girls Got Game
     images:
-      - url: 'https://girlsgotgamejam.org/assets/images/thumbnail.png'
+      - url: '/assets/images/thumbnail.png'
         width: 1200
         height: 630
     type: website

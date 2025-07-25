@@ -19,7 +19,7 @@ metadata:
     site_name: Girls Got Game
     type: website
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/thumb.png'
         width: 1200
         height: 628
   twitter:

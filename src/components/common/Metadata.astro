@@ -67,7 +67,7 @@ const seoProps: AstroSeoProps = merge(
 
 seoProps.openGraph = {
   ...seoProps.openGraph,
-  images: [{ url: thumbnail.src, width: 1200, height: 630 }],
+  images: [{ url: thumbnail.src, width: thumbnail.width, height: thumbnail.height }],
 };
 ---
 

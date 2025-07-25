@@ -1,6 +1,6 @@
 site:
   name: Girls Got Game
-  site: 'https://astrowind.vercel.app'
+  site: 'https://girlsgotgamejam.org'
   base: '/'
   trailingSlash: false
 

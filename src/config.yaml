@@ -18,6 +18,10 @@ metadata:
   openGraph:
     site_name: Girls Got Game
     type: website
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
   twitter:
     handle: '@onwidget'
     site: '@onwidget'

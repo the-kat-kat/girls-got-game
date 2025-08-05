@@ -17,6 +17,14 @@ export const headerData = {
           text: 'How to Participate',
           href: getPermalink('/#HIW'),
         },
+        {
+          text: 'Judging Criteria',
+          href: getPermalink('/#Criteria'),
+        },
+        {
+          text: 'Prizes',
+          href: getPermalink('/#Prizes'),
+        },
         /**{
           text: 'Rules',
           href: getPermalink('#Rules'),
@@ -27,6 +35,12 @@ export const headerData = {
       text: 'FAQ',
       href: getPermalink('/#FAQ'),
     },
+    /** 
+    {
+      text: 'Supporters',
+      href: getPermalink('/supporters'),
+    },
+    */
     {
       text: 'Contact',
       href: getPermalink('/contact'),

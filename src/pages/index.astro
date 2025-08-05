@@ -51,11 +51,10 @@ const metadata = {
       <Features
         id="features"
         title="About"
-        subtitle="Girls Got Game is an international online game jam designed to empower <span class='text-yellow-400'> girls and nonbinary youths ages 13–18</span> to explore creativity, coding, and storytelling through game development. Whether you're new to games or already creating, this beginner-friendly event offers resources, and a supportive space to build and share your own game. We’re here to help you grow your skills and have fun doing it!"
+        subtitle={`Girls Got Game is an international online game jam designed to empower <span class='text-yellow-400'> girls and nonbinary youths ages 13–18</span> to explore creativity, coding, and storytelling through game development. Whether you're new to games or already creating, this beginner-friendly event offers resources, and a supportive space to build and share your own game. We’re here to help you grow your skills and have fun doing it!`}
       />
     </section>
 
-    <!-- Features Widget *************** -->
     <section id="Game-Jam" class="intersect animate-fade">
       <Features
         id="features"
@@ -65,8 +64,6 @@ const metadata = {
     </section>
 
     <section id="HIW" class="intersect animate-fade">
-      <!-- Steps2 Widget ****************** -->
-
       <Steps
         title="How to Participate"
         items={[
@@ -90,6 +87,49 @@ const metadata = {
             description: 'Explore what others made, and celebrate your creativity in our closing showcase!',
           },
         ]}
+      />
+    </section>
+
+    <section id="Criteria" class="intersect animate-fade">
+      <!-- FAQ Widget **************** -->
+      <FAQs
+        title="Judging Criteria"
+        subtitle="Games will be judged based on the following 4 criteria:"
+        items={[
+          {
+            title: 'Theme',
+            description: 'Does the game use the official theme in a meaningful way?',
+          },
+          {
+            title: 'Gameplay',
+            description: 'Is the game fun and engaging?',
+          },
+          {
+            title: 'Quality',
+            description: 'Is the game complete and polished?',
+          },
+          {
+            title: 'Creativity',
+            description: 'Does the game incorporate fresh ideas in its design?',
+          },
+        ]}
+      />
+    </section>
+
+    <!-- Features Widget *************** -->
+    <section id="Prizes" class="intersect animate-fade">
+      <Features
+        id="features"
+        title="Prizes"
+        subtitle={`
+        There will be monetary prizes for the top 5 games, as well as some special non-monetary prizes and swag! <br />
+        <br />
+        First: $100 <br />
+        Second: $50 <br />
+        Third: $25 <br />
+        Fourth: $15 <br />
+        Fifth: $10
+      `}
       />
     </section>
 

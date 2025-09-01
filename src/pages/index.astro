@@ -4,7 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+/**import CallToAction from '~/components/widgets/CallToAction.astro';*/
 import Steps from '~/components/widgets/Steps.astro';
 
 const metadata = {
@@ -17,12 +17,6 @@ const metadata = {
   <!-- Hero Widget ******************* -->
   <Hero
     actions={[
-      {
-        variant: 'primary',
-        text: 'Register Now',
-        href: 'https://docs.google.com/forms/d/e/1FAIpQLSckl7t6_hGV4MBWNYC-sADMKWYsxWwomkXpVUWyGTu_CrR39A/viewform?usp=header',
-      },
-
       {
         variant: 'primary',
         text: 'Join Our Discord',
@@ -41,7 +35,6 @@ const metadata = {
       <span class="text-white leading-none">
         An international game jam empowering girls and <br /> non-binary youth through creativity and code <br />
       </span>
-      <span class="text-white leading-loose"> <strong class="text-xl md:text-2xl"> August 16 - 22, 2025</strong></span>
     </Fragment>
   </Hero>
 
@@ -73,12 +66,12 @@ const metadata = {
               'Sign up individually using the google form <a href="https://docs.google.com/forms/d/e/1FAIpQLSckl7t6_hGV4MBWNYC-sADMKWYsxWwomkXpVUWyGTu_CrR39A/viewform" target="_blank" rel="noopener noreferrer"><strong><u>here</u></strong></a>. After that, you will receive all the details you need to get started! If you want to join a team, there will be a separate form for that after you register individually.',
           },
           {
-            title: 'Join the Kickoff (Aug 15)',
+            title: 'Join the Kickoff',
             description:
               'We’ll announce the theme (a phrase to inspire your game), share resources, and answer questions during a virtual kickoff event.',
           },
           {
-            title: 'Make Your Game (Aug 16-22)',
+            title: 'Make Your Game',
             description:
               'You’ll have one week to create a game based on the theme. Use any tool or platform (ex: Scratch, Unity, Godot, and more)! It’s not just programming though, you can also participate as part of a team by contributing art, music, or design!',
           },
@@ -87,14 +80,6 @@ const metadata = {
             description: 'Explore what others made, and celebrate your creativity in our closing showcase!',
           },
         ]}
-      />
-    </section>
-
-    <section id="Theme" class="intersect animate-fade">
-      <Features
-        id="features"
-        title="Theme"
-        subtitle="Our theme is: </br> <span class='text-xl text-yellow-400 '> ATTRACT </span>"
       />
     </section>
 
@@ -124,7 +109,7 @@ const metadata = {
       />
     </section>
 
-    <!-- Features Widget *************** -->
+    <!-- Features Widget *************** 
     <section id="Prizes" class="intersect animate-fade">
       <Features
         id="features"
@@ -143,6 +128,7 @@ const metadata = {
       `}
       />
     </section>
+  -->
 
     <section id="FAQ" class="intersect animate-fade">
       <!-- FAQ Widget **************** -->
@@ -192,7 +178,7 @@ const metadata = {
     </section>
 
     <!-- CallToAction Widget *********** -->
-
+    <!-- 
     <section id="Register" class="intersect animate-fade">
       <CallToAction
         actions={[
@@ -212,6 +198,7 @@ const metadata = {
         <Fragment slot="title"> Ready to join? </Fragment>
       </CallToAction>
     </section>
+    -->
 
     <!--paralax scroll-->
     <script is:inline>

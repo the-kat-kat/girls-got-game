@@ -6,6 +6,7 @@ export const headerData = {
       text: 'About',
       href: getPermalink('/#About'),
     },
+    /** 
     {
       text: 'The Jam',
       links: [
@@ -28,12 +29,17 @@ export const headerData = {
         /**{
           text: 'Rules',
           href: getPermalink('#Rules'),
-        },**/
+        },
       ],
     },
+    */
     {
       text: 'FAQ',
       href: getPermalink('/#FAQ'),
+    },
+    {
+      text: 'Past Winners',
+      href: getPermalink('/past-winners'),
     },
     {
       text: 'Supporters',

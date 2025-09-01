@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+const metadata = {
+  title: 'Past Winners',
+};
+
+const supporters = [
+  {
+    name: 'First Place',
+    subtitle: 'Magni Trial runs by Victoria Y',
+    logo: '/assets/images/MagniTrialRuns.png',
+    url: 'https://waterprisem.itch.io/magni',
+  },
+  {
+    name: 'Second Place',
+    subtitle: 'Curse of the Flame by Marina M and Ishi S',
+    logo: '/assets/images/CurseFlame.png',
+    url: 'https://marinat.itch.io/the-curse-of-the-torch',
+  },
+  {
+    name: 'Third Place',
+    subtitle: 'Swarm by Marina M and Chase C, Nihji C, and Gorya D',
+    logo: '/assets/images/Swarm.png',
+    url: 'https://ch4seatlantic.itch.io/swarm',
+  },
+  {
+    name: 'Best Original Art/Design',
+    subtitle: 'Where You Go I Follow by Alex M and Declan W',
+    logo: '/assets/images/WhereYouGoIFollow.png',
+    url: 'https://triumphindeath.itch.io/where-you-go-i-follow',
+  },
+
+  {
+    name: 'Most Innovative Gameplay',
+    subtitle: 'Perfection by Marina M and Chase C, Nihji C, and Gorya D',
+    logo: '/assets/images/Perfection.png',
+    url: 'https://angeliapy.itch.io/perfection',
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <HeroText title="Congrats to all our past winners!" />
+
+  <section class="py-16 px-4 md:px-12 lg:px-24">
+    <div class="grid grid-cols-1 gap-64 items-start justify-center">
+      {
+        supporters.map((supporter) => (
+          <div class="flex flex-col items-center text-center space-y-4">
+            <a href={supporter.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={supporter.logo}
+                alt={supporter.name + ' logo'}
+                class="h-80 md:h-96 w-auto object-contain hover:opacity-80 transition rounded-xl"
+              />
+            </a>
+            <div>
+              <h3 class="text-3xl font-bold">{supporter.name}</h3>
+              <h3 class="text-lg">{supporter.subtitle}</h3>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

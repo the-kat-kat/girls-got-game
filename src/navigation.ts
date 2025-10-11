@@ -42,7 +42,7 @@ export const headerData = {
       href: getPermalink('/past-winners'),
     },
     {
-      text: 'Supporters',
+      text: 'Partners',
       href: getPermalink('/supporters'),
     },
     {

@@ -4,7 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-/**import CallToAction from '~/components/widgets/CallToAction.astro';*/
+import CallToAction from '~/components/widgets/CallToAction.astro';
 import Steps from '~/components/widgets/Steps.astro';
 
 const metadata = {
@@ -38,7 +38,7 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="text-white leading-none">
-        An international game jam empowering girls and <br /> non-binary youth through creativity and code <br /><br
+        An international game jam empowering female and <br /> non-binary students through game development <br /><br
         /><br />
       </span>
     </Fragment>
@@ -50,7 +50,7 @@ const metadata = {
       <Features
         id="features"
         title="About"
-        subtitle={`Girls Got Game is an international online game jam designed to empower <span class='text-yellow-400'> girls and nonbinary youths ages 13–18</span> to explore creativity, coding, and storytelling through game development. Whether you're new to games or already creating, this beginner-friendly event offers resources, and a supportive community to build and share your own game. This fall, Girls Got Game is running a month-long jam from November 13th - December 15th!`}
+        subtitle={`Girls Got Game is an international online game jam designed to empower <span class='text-yellow-400'> girls and nonbinary youths ages 13–18</span> to explore creativity, coding, and storytelling through game development. Whether you're new to games or already creating, this beginner-friendly event offers resources, and a supportive community to build and share your own game. This fall, Girls Got Game is running a month-long jam from November 15th - December 13th!`}
       />
     </section>
 
@@ -72,7 +72,7 @@ const metadata = {
               'Sign up individually using the google form <a href="https://forms.gle/HmwDDKnvozQ3fteU6" target="_blank" rel="noopener noreferrer"><strong><u>here</u></strong></a>. After that, you will receive all the details you need to get started! If you want to join a team, there will be a separate form for that after you register individually.',
           },
           {
-            title: 'Join the Kickoff (November 13th)',
+            title: 'Join the Kickoff (November 15th)',
             description:
               'We’ll announce the theme (a phrase to inspire your game), share resources, and answer questions during a virtual kickoff event.',
           },
@@ -115,26 +115,24 @@ const metadata = {
       />
     </section>
 
-    <!-- Features Widget *************** 
+    <!-- Features Widget ***************   -->
+
     <section id="Prizes" class="intersect animate-fade">
       <Features
         id="features"
         title="Prizes"
         subtitle={`
-        There will be monetary prizes for the top 3 games and 2 special categories! <br />
+        There will be monetary prizes for the top 3 games<br />
         <br />
-        First: <br /> +$150 <br /> + 3 Aseprite licenses <br /> + full scholarship to Girls Make Games (GMG) 2026 Virtual Summer Camp <br />
-        <br /> Second: <br /> +$100 <br />
+        First: <br /> +$100 <br /> 
+        <br /> Second: <br /> +$50 <br />
         <br />
-        Third: <br /> +$50 <br /> <br />
-        Best (ORIGINAL) Art / Music Design: $40 giftcard + Aseprite License <br />
-        <br /> Most Innovative Gameplay: $30 giftcard + Construct 3 License
-        <br />
-        <br />All our winners will also receive keys to play GMG games!
+        Third: <br /> +$25 <br /> <br />
+        <br /> 
+        <br /> More prizes coming soon!
       `}
       />
     </section>
-  -->
 
     <section id="FAQ" class="intersect animate-fade">
       <!-- FAQ Widget **************** -->
@@ -165,11 +163,6 @@ const metadata = {
               'Yes! You can participate solo or in a team of up to 4 people. You’ll be able to register as a team after you sign up individually. We’ll also help match solo participants who want to find teammates.',
           },
           {
-            title: 'How do I submit my game?',
-            description:
-              'You’ll submit your game through Devpost. We’ll provide full instructions and support before the deadline.',
-          },
-          {
             title: 'Do I need Discord?',
             description:
               'Discord is optional but highly recommended. It’s where we’ll host announcements and community chats. We’ll have moderators to keep things safe and supportive. You can join <a href="https://discord.gg/TgweDKk2" target="_blank" rel="noopener noreferrer"><strong><u>here</u></strong></a>.',
@@ -184,14 +177,13 @@ const metadata = {
     </section>
 
     <!-- CallToAction Widget *********** -->
-    <!-- 
     <section id="Register" class="intersect animate-fade">
       <CallToAction
         actions={[
           {
             variant: 'primary',
             text: 'Register Now',
-            href: 'https://docs.google.com/forms/d/e/1FAIpQLSckl7t6_hGV4MBWNYC-sADMKWYsxWwomkXpVUWyGTu_CrR39A/viewform?usp=header',
+            href: 'https://forms.gle/HUvWZFAUDAprPPDC7',
             target: '_blank',
           },
           {
@@ -204,7 +196,6 @@ const metadata = {
         <Fragment slot="title"> Ready to join? </Fragment>
       </CallToAction>
     </section>
-    -->
 
     <!--paralax scroll-->
     <script is:inline>

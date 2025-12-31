@@ -12,34 +12,42 @@ const supporters = [
   {
     name: 'Construct 3',
     logo: '/assets/images/construct3.jpg',
+    url: 'https://www.construct.net/',
   },
   {
     name: 'Aseprite',
     logo: '/assets/images/Aseprite-logo.png',
+    url: 'https://www.aseprite.org/',
   },
   {
     name: 'Women in Games',
     logo: '/assets/images/wig-logo.jpg',
+    url: 'https://www.womeningames.org/',
   },
   {
     name: 'Girls Make Games',
     logo: '/assets/images/girlsmakegames.jpeg',
+    url: 'https://girlsmakegames.com/',
   },
   {
     name: 'CodeCrafters',
     logo: '/assets/images/codecrafters-logo.png',
+    url: 'https://codecrafters.io/',
   },
   {
     name: 'CleanShot',
-    logo: '/assets/images/cleanshot-logo.png'
+    logo: '/assets/images/cleanshot-logo.png',
+    url: 'https://cleanshot.com/',
   },
   {
     name: 'XYZ',
-    logo: 'assets/images/xyz-logo-white.png'
+    logo: 'assets/images/xyz-logo-white.png',
+    url: 'https://gen.xyz/',
   },
   {
     name: 'Glowkeeper',
-    logo: 'assets/images/glowkeeper.png'
+    logo: 'assets/images/glowkeeper.png',
+    url: 'https://glowkeepergame.com/',
   },
 
 ];
@@ -54,7 +62,14 @@ const supporters = [
         {
           supporters.map((supporter) => (
             <div class="flex flex-col items-center text-center space-y-4">
-              <img src={supporter.logo} alt={supporter.name + ' logo'} class="w-64 h-auto object-contain" />
+              <a
+                href={supporter.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:opacity-80 transition-opacity"
+              >
+                <img src={supporter.logo} alt={supporter.name + ' logo'} class="w-64 h-auto object-contain" />
+              </a>
               <div>
                 <h3 class="text-lg font-semibold">{supporter.name}</h3>
               </div>

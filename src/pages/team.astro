@@ -60,10 +60,10 @@ const teamMembers = [
   <HeroText title="Meet Our Team" />
 
   <section class="py-16 px-4 md:px-12 lg:px-24">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start justify-center">
+    <div class="flex flex-wrap justify-center gap-8 items-center">
       {
         teamMembers.map((member) => (
-          <div class="bg-black/50 rounded-3xl p-9 flex flex-col items-center text-center space-y-4">
+          <div class="bg-black/50 rounded-3xl p-9 flex flex-col items-center text-center space-y-4 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.33rem)] max-w-sm">
             <img
               src={member.image}
               alt={member.name + ' photo'}

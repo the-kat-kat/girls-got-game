@@ -46,6 +46,10 @@ export const headerData = {
       href: getPermalink('/supporters'),
     },
     {
+      text: 'Team',
+      href: getPermalink('/team'),
+    },
+    {
       text: 'Contact',
       href: getPermalink('/contact'),
     },

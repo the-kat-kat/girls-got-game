@@ -1,0 +1,99 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+const metadata = {
+  title: 'Team',
+};
+
+const teamMembers = [
+  {
+    name: 'Caitlynn Sue ',
+    info: 'Organizer — 18, CA',
+    image: '/assets/images/team/person-default.png',
+  },
+  {
+    name: 'Avni Harsh',
+    info: 'Organizer — 17, CA',
+    image: '/assets/images/team/avni.png',
+    linkedin: 'https://www.linkedin.com/in/avni-h-206a68357/',
+  },
+  {
+    name: 'Jessica Chen',
+    info: 'Organizer — 17, VA',
+    image: '/assets/images/team/jessica.png',
+    linkedin: 'https://www.linkedin.com/in/jessica-chen-69a30a295//'
+  },
+  {
+    name: 'Julia Do',
+    info: 'Organizer — 17, MA',
+    image: '/assets/images/team/julia.png',
+    linkedin: 'https://www.linkedin.com/in/-juliado/'
+  },
+
+  {
+    name: 'Kasey Gu',
+    info: 'Organizer — 15, NJ',
+    image: '/assets/images/team/person-default.png',
+  },
+  {
+    name: 'Charlotte Woodrum',
+    info: 'Organizer — 16, GA',
+    image: '/assets/images/team/charlotte.png',
+    linkedin: 'https://www.linkedin.com/in/charlotte-woodrum-557900370/'
+  },
+  {
+    name: 'Harshini HPK',
+    info: 'Organizer — 16, MA',
+    image: '/assets/images/team/harshini.png',
+    linkedin: 'https://www.linkedin.com/in/harshini-hari-prasad-kumar-432187376/'
+  },
+  // {
+    //name: 'Shyla Singal',
+    //info: 'Renpy Mentor',
+    //image: '/assets/images/team/shyla.jpg'
+  //},
+];
+---
+
+<Layout metadata={metadata}>
+  <HeroText title="Meet Our Team" />
+
+  <section class="py-16 px-4 md:px-12 lg:px-24">
+    <div class="flex flex-wrap justify-center gap-8 items-center">
+      {
+        teamMembers.map((member) => (
+          <div class="bg-black/50 rounded-3xl p-9 flex flex-col items-center text-center space-y-4 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.33rem)] max-w-sm">
+            <img
+              src={member.image}
+              alt={member.name + ' photo'}
+              class="w-48 h-48 rounded-full object-cover"
+            />
+            <div>
+              <div class="flex items-center justify-center gap-2">
+                <h3 class="text-xl font-semibold">{member.name}</h3>
+                {member.linkedin && (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block"
+                    aria-label={`${member.name}'s LinkedIn profile`}
+                  >
+                    <img
+                      src="/assets/images/linkedinlogo.png"
+                      alt="LinkedIn"
+                      class="w-5 h-5 opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                  </a>
+                )}
+              </div>
+              <p class="text-gray-100 dark:text-gray-200">{member.info}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Layout>
+

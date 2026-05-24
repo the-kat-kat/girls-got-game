@@ -38,7 +38,7 @@ export const headerData = {
       href: getPermalink('/#FAQ'),
     },
     {
-      text: 'Past Winners',
+      text: 'GGG1 Winners',
       href: getPermalink('/past-winners'),
     },
     {

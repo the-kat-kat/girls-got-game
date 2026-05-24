@@ -11,7 +11,7 @@ metadata:
   title:
     default: Welcome to Girls Got Game!
     template: '%s — Girls Got Game'
-  description: 'A game jam to empower girls and non-binary youth in game development'
+  description: 'A game jam to empower girls and non-binary youth in technology and innovation through game development'
   robots:
     index: true
     follow: true
